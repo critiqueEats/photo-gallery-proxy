@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Lorem Yelpsum</title>
+  </head>
+  <body>
+    <div id="Header"></div>
+    <div id="Gallery"></div>
+    <div id="Reservations"></div>
+    <div id="Reviews"></div>
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3001/app.js"></script>
+    <script src="http://localhost:3002/app.js"></script>
+    <script src="http://localhost:3003/app.js"></script>
+    <script src="http://localhost:3005/app.js"></script>
+    <script>
+      ReactDOM.render(
+        React.createElement(Header),
+        document.getElementById('Header')
+      );
+      ReactDOM.render(
+        React.createElement(Gallery),
+        document.getElementById('Gallery')
+      );
+      ReactDOM.render(
+        React.createElement(Reservations),
+        document.getElementById('Reservations')
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('Reviews')
+      );
+    </script>
+  </body>
+</html>
