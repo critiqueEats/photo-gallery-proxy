@@ -6,32 +6,32 @@
     <title>Lorem Yelpsum</title>
   </head>
   <body>
-    <div id="Header"></div>
-    <div id="Gallery"></div>
-    <div id="Reservations"></div>
-    <div id="Reviews"></div>
+    <div id="header"></div>
+    <div id="gallery"></div>
+    <div id="reservations"></div>
+    <div id="reviews"></div>
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3005/app.js"></script>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:5002/bundle.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3005/bundle.js"></script>
     <script>
       ReactDOM.render(
-        React.createElement(Header),
-        document.getElementById('Header')
+        React.createElement(Header, {restaurantId: 1}, null),
+        document.getElementById('header')
       );
       ReactDOM.render(
-        React.createElement(Gallery),
-        document.getElementById('Gallery')
+        React.createElement(Gallery, {restaurantId: 1}, null),
+        document.getElementById('gallery')
       );
       ReactDOM.render(
-        React.createElement(Reservations),
-        document.getElementById('Reservations')
+        React.createElement(Reservations, {restaurantId: 1}, null),
+        document.getElementById('reservations')
       );
       ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('Reviews')
+        React.createElement(Reviews, {restaurantId: 1}, null),
+        document.getElementById('reviews')
       );
     </script>
   </body>
