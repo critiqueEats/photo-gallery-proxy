@@ -1,0 +1,32 @@
+#sidebar {
+    position: relative;
+    float: right;
+    left: 25em;
+}
+
+#gallery {
+    position: relative;
+    float: center;
+    left: -92em;
+    top: 15.2em;
+}
+
+#header {
+    position: relative;
+    float: left;
+    left: -21em;
+}
+
+#reviews {
+    position: relative;
+    top: -2em;
+    left: -13em;
+}
+
+.top {
+    display: flex;
+}
+
+.bottom {
+    display: flex;
+}
